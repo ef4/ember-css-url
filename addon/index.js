@@ -7,7 +7,13 @@ export default function cssUrl(propertyName, url) {
   if (!url) {
     return;
   }
-  let encodedURL = encodeURI(url);
+
+  // Step 1: Make sure there are no un-encoded double quotes
+  let encodedURL = url.replace(/"/g, '%22');
+
+  // Step 2: if there is a protocol present, whitelist only http and
+  // https. This prevents shenanigans like "javascript://" URLs (which
+  // certain older browsers may execute).
   let m = /^([^:]+):/.exec(encodedURL);
   if (m) {
     let proto = m[1].toLowerCase();
@@ -15,5 +21,8 @@ export default function cssUrl(propertyName, url) {
       throw new Error(`disallowed protocol in css url: ${url}`);
     }
   }
+
+  // Step 3: Use our own double quotes, which the url cannot break out
+  // of due to Step 1.
   return htmlSafe(`${propertyName}: url("${encodedURL}")`);
 }

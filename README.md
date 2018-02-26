@@ -1,6 +1,15 @@
 # ember-css-url
 
-This README outlines the details of collaborating on this Ember addon.
+A helper for safely embedding URLs in style properties. Avoids CSS XSS exposure and sanitizes user-provided URLs.
+
+```hbs
+<div style={{css-url "background-image" user.avatarURL}} ></div>
+```
+
+```html
+<div style='background-image: url("https://example.com/avatar.png")' ></div>
+```
+
 
 ## Installation
 

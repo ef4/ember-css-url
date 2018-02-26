@@ -1,12 +1,17 @@
 {
   "name": "ember-css-url",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.1.0",
+  "description": "A helper for safely embedding URLs in style properties",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "css",
+    "style",
+    "xss",
+    "url",
+    "background-image"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Edward Faulkner <edward@eaf4.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"

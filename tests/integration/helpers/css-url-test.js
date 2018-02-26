@@ -21,8 +21,12 @@ module('css-url', 'helper:css-url', function(hooks) {
     }, /disallowed protocol/);
   });
 
-  test('it encodes any quotes', async function(assert) {
+  test('it encodes any quotes', function(assert) {
     assert.equal(cssURL('background-image', 'foo"bar').toString(), 'background-image: url("foo%22bar")');
+  });
+
+  test("it doesn't double-encode URLs that already have encoding", function(assert) {
+    assert.equal(cssURL('background-image', '/?title=I%20%22Think%22%20So').toString(), 'background-image: url("/?title=I%20%22Think%22%20So")');
   });
 
 });
