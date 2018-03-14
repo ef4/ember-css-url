@@ -1,6 +1,6 @@
 {
   "name": "ember-css-url",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A helper for safely embedding URLs in style properties",
   "keywords": [
     "ember-addon",
@@ -16,7 +16,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/ef4/ember-css-url",
   "scripts": {
     "build": "ember build",
     "lint:js": "eslint ./*.js addon addon-test-support app config lib server test-support tests",
