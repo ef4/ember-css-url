@@ -1,13 +1,18 @@
 {
   "name": "ember-css-url",
   "version": "1.0.0-alpha.0",
-  "description": "The default blueprint for Embroider v2 addons.",
+  "description": "A helper for safely embedding URLs in style properties",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "css",
+    "style",
+    "xss",
+    "url",
+    "background-image"
   ],
-  "repository": "",
+  "repository": "https://github.com/ef4/ember-css-url",
   "license": "MIT",
-  "author": "",
+  "author": "Edward Faulkner <edward@eaf4.com>",
   "files": [
     "addon-main.js",
     "dist"
