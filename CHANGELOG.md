@@ -1,3 +1,4 @@
+# Changelog
 
 ## v1.0.0-alpha.0 (2022-07-06)
 
@@ -11,4 +12,6 @@
 - Edward Faulkner ([@ef4](https://github.com/ef4))
 - Luke Melia ([@lukemelia](https://github.com/lukemelia))
 
-# Changelog
+## v0.2.1 (2018-03-14)
+
+
