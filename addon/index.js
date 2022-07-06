@@ -1,7 +1,7 @@
 import { htmlSafe } from '@ember/string';
 
 export default function cssUrl(propertyName, url) {
-  if (!/^[-a-zA-Z]+$/.test(propertyName )) {
+  if (!/^[-a-zA-Z]+$/.test(propertyName)) {
     throw new Error(`Potentially unsafe property name ${propertyName}`);
   }
   if (!url) {
