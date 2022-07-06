@@ -1,5 +1,19 @@
 # Changelog
 
+
+## v1.0.0 (2022-07-06)
+
+Breaking change is only due to:
+ - dropping old Node versions
+ - dropping old Ember versions (minimum is now 3.16)
+ - requiring ember-auto-import 2 or Embroider
+
+#### :house: Internal
+* [#3](https://github.com/ef4/ember-css-url/pull/3) Updates to package publishing and metadata ([@ef4](https://github.com/ef4))
+
+#### Committers: 1
+- Edward Faulkner ([@ef4](https://github.com/ef4))
+
 ## v1.0.0-alpha.0 (2022-07-06)
 
 #### :boom: Breaking Change

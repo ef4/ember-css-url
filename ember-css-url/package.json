@@ -1,6 +1,6 @@
 {
   "name": "ember-css-url",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0",
   "description": "A helper for safely embedding URLs in style properties",
   "keywords": [
     "ember-addon",
