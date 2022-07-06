@@ -16,7 +16,7 @@ A helper for safely embedding URLs in style properties. Avoids CSS XSS exposure 
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v3.24 or above
+* Ember.js v3.16 or above
 * Embroider or ember-auto-import v2
 * Node.js v14 or above
 
