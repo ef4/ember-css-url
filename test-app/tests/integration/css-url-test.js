@@ -17,6 +17,16 @@ module('Integration | helper | css-url', function (hooks) {
     assert.strictEqual(style, `background-image: url("/picture.png")`);
   });
 
+  test('it renders data URIs', async function(assert) {
+    this.set('avatar', 'data:image/png;base64,iVBORw');
+    await render(
+      hbs`<div class="example" style={{css-url "background-image" this.avatar}}></div>`
+    );
+
+    let style = this.element.querySelector('.example').getAttribute('style');
+    assert.strictEqual(style, `background-image: url("data:image/png;base64,iVBORw")`);
+  });
+
   test('it rejects any funny protocols', async function (assert) {
     assert.throws(() => {
       cssURL('background-image', 'weird://foo');

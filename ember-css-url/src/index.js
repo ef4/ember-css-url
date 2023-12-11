@@ -17,7 +17,7 @@ export default function cssUrl(propertyName, url) {
   let m = /^([^:]+):/.exec(encodedURL);
   if (m) {
     let proto = m[1].toLowerCase();
-    if (proto !== 'http' && proto !== 'https') {
+    if (proto !== 'http' && proto !== 'https' && proto !== 'data') {
       throw new Error(`disallowed protocol in css url: ${url}`);
     }
   }
